@@ -7,14 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -   name: Checkout Repository
-          uses: actions/checkout@master
-      - name: FTP Deployer
-        uses: sand4rt/ftp-deployer@v1.7
+          uses: actions/checkout@main
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          sftp: false
-          host: ${{ secrets.FTP_SERVER }}
-          port: 21
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_folder: '/testservice.boothlab.id'
-          include: '[".env"]'
+          dry-run: true
