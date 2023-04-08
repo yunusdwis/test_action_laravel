@@ -16,5 +16,5 @@ jobs:
           port: 21
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_folder: '/'
+          local_folder: '/testservice.boothlab.id'
           include: '[".env"]'
