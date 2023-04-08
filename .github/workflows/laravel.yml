@@ -23,7 +23,7 @@ jobs:
       - name: Upload via FTP by Actions Github
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: ${{ secrets.SERVER }}
-          user: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           delete: "false"
