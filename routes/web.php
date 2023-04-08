@@ -11,5 +11,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    echo '<center><h1>HELLO WORLD!<BR>from Laravel<br>yang kedua nih</h1><center>';
+    echo '<center><h1>HELLO WORLD!<BR>from Laravel<br>yang kedua nihh</h1><center>';
 });
